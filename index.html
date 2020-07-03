@@ -5,42 +5,126 @@
              Abdullah Naemah
          </title>
 
-         <style>
-             .nae {
-                 color:forestgreen;
-                 text-align:right;
-                 font-size: 30px;
-             }
+         <script>
+       
+            // var n= prompt("what is your name");
+            // alert("hello " =n);
+            // console.log(n);
+            // var my_name= "Naemah";
 
-             .msg {
-                background-color: forestgreen;
-                color: white;
-                padding: 5px;
-                border-radius: 10px;
-                margin: 5px;
-             }
 
-         </style>
+            // var num1 = prompt("enter 1st number");
+            // var num2 = prompt("enter 2nd number" );
+
+            // var sum = num1 + num2;
+
+
+            // var firstname = "Naemah";
+            // var lastname = "Abdullah";
+
+            // alert(firstname + " " + lastname);
+
+
+            // conditionals allow us to pick one set of code block and goes
+            // = assignment
+            // == comparison operator
+
+
+
+            // var gender =prompt("Gender");
+
+            // if (gender == "female") {
+            //     alert("welcome to the program");
+            // }
+            // else {
+            //     alert("sorry, for ladies only")
+            // }
+
+            // function fullname(){ THIS IS HOW YOU CREATE A FUNCTION keyword
+            //          let first = prompt("first name");
+            //          let last = prompt("last name");
+            //          alert("full name: " + first + " " + last);
+            // }
+
+            // fullname(); THIS IS HOW TO CALL YOUR FUNCTION TO RUN
+
+            // var age = prompt("age");
+            // if (age >="18") {
+            //     alert("welcome to the best bar in town");
+            // }
+            //  else {
+            //    alert("sorry your are not qualified to be here,go home and wait for your 18th birthday");
+            //  }
+
+
+              function detector(name, year_of_birth, drink)  {
+
+                let min_age = 18;
+                let age =2020 - year_of_birth;
+                
+              if (age < min_age && drink == "beer" ) { 
+                  alert("you are below the minimum age");
+            }  
+            else if (drink != "beer") {
+                alert("oya, drink!");
+                }
+            
+                else {
+                    alert("cheers to beer & life");
+                }
+
+            }
+                // let userName = prompt("what is your name ?");
+                // let year_of_birth = prompt("input your year of birth");
+                // let drink = prompt("drink, type");
+
+                // detector(userName, year_of_birth, drink);
+
+
+                 
+              
+              
+                
+
+            
+        
+                
+                
+
+
+
+         </script>
+         
+         
+         <link rel="stylesheet" href="styles.css" />
+
+
     </head>
     <body>
-      
-        <h1 class="nae"> welcome to my webpage</h1>
+      <a href="about.html">
+          About us
+      </a>
+
+      <!-- the H1 represents a header 1 -->
+        <h1 class="nae msg"> welcome to my webpage</h1>
         <p>
             this is my first web project. Hurrayyyy!!!!
         </p>
 
         <p class="msg">list of fruits</p>
     <ul>
+
+        <!-- UL represents unordered list -->
          <li>mango</li>
          <li>Orange</li>
-         <li>Apple</li>
+         <li>Apple</li> 
         
         </ul>
 
         <h1>this is a new change</h1>
-        <h1 style="color: red; font:bolder;">About myself</h1>
-        <p>I am an ambitous person</p>
-        <p style="color: red; font-weight:900;" class="msg">These are the things i like</p>
+        <h1 style="color:red; font:bolder;">About myself</h1>
+        <p>I am an ambitious person</p>
+        <p {style="color:red; font-weight:900;"}>These are the things i like</p>
 
         <ul>
            <li>a good challenge</li>
@@ -50,17 +134,75 @@
            <li class="nae">good food</li>
            </ul>
 
+           <img src="puppy.jpg" alt="">
+
+           <br />
+           <br />
+           <br />
+
+           <div id="greetText"></div>
+
+           <input id="nameInput"  type="text" placeholder="enter your name here" />
+           <button id="greetBtn">Greet!</button>
+      
+
+     <script>
+           
+           let btn= document.getElementById("greetBtn");
+                 btn.addEventListener("click",function () {
+                    //  alert("button clicked");
+           let msg = document.getElementById("greetText");
+           let name= document.getElementById("nameInput");
+            
+           let val = name.value;
+           msg.innerText = "Hello, " + val;
+
+
+      });
+
+   </script>
+
+
+
+         
     </body>
     
 </html> 
 
+<!-- 
+types of data in variables- represents memory locations used to hold data (javascript)
+ string: normal text you write. need to be in either single quote or double quote
+ number or integer: normal number. no quote needed. 
+ anything found in the quote is called a string
+ eg: var age= 100
+ boolean: true or false,  yes or no, no quotes as well
+eg: var married= true
+
+one of the groupings of code in java is called a function( works like the class in css)
+information you pass to funtions are called parameters:
+(extra info you provide for the function to work well)
+FUNCTIONS SHOULD NOT START WITH NUMBERS OR KEYWORDS
+
+ <!-- javascript is the behaviour and manipulations you cannot see -->
+
+<!-- == EQUALITY CHECK
+    === STRICT EQUALITY CHECK
+> GREATER THAN .......
+< LESS THAN .........
+    >= GREATER THAN OR EQUALS TO .......
+    <= LESS THAN OR EQUALS TO ......
+    ^ TO THE POWER
+    % REMAINDER
+    != maeans not equals to ......
+-->
 
 
 
 
 
 
-
+<!-- TYPES OF CSS
 inline   -> inside opening tag
 internal -> inside same doc file
-external -> on a separate style sheet file
+external -> on a separate style sheet file -->
+

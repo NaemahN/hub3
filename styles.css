@@ -1,0 +1,40 @@
+.nae {
+    color:darkblue;
+    text-align:right;
+    font-size: 30px;
+}
+
+.msg {
+   background-color: darkblue;
+   color: white;
+   padding: 5px;
+   border-radius: 10px;
+   margin: 5px;
+}
+
+
+.img{
+   width: 20%;
+}
+   
+
+/* programming is giving a computer a set of specific commands to 
+execute a particular task
+concepts in programming;
+1. 
+
+*/
+ 
+/* 
+front -end
+ html -> structure of our webpage
+ css ->  styling of our webpage
+ javascript -> mostly used for website development
+ punctuations in javascript are;
+ 1. full stop ->  is a semi-colon (;)
+ 2. 
+ 
+ variables are assigned values of your choice but cannot be repeated 
+ if not the new value overrides the old value
+ */
+
